@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Test_US_202 extends BaseDriver {
+public class US_202_Istifadeci_Qeydiyyatı_Negative extends BaseDriver {
     @Test
     public void Test2(){
         MyFunc.wait(3);

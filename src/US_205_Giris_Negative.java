@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Test_US_205 extends BaseDriver {
+public class US_205_Giris_Negative extends BaseDriver {
     @Test
     public void Test5() {
         MyFunc.wait(3);
@@ -14,7 +14,9 @@ public class Test_US_205 extends BaseDriver {
         login.click();
 
         WebElement loginEmail = driver.findElement(By.xpath("//input[@name='Email']"));
+        loginEmail.sendKeys("");
         WebElement loginPassword = driver.findElement(By.xpath("//input[@name='Password']"));
+        loginPassword.sendKeys("");
         WebElement loginBtn = driver.findElement(By.xpath("//input[@class='button-1 login-button']"));
         loginBtn.click();
         MyFunc.wait(1);

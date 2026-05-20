@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class Test_US_208 extends BaseDriver {
+public class US_208_Kupon_Kart_Yoxlanis extends BaseDriver {
     @Test
     public void Test8() {
         driver.navigate().to("https://demowebshop.tricentis.com/");

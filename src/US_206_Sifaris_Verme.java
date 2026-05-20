@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class Test_US_206 extends BaseDriver {
+public class US_206_Sifaris_Verme extends BaseDriver {
     @Test
     public void Test6() {
         driver.navigate().to("https://demowebshop.tricentis.com/");
