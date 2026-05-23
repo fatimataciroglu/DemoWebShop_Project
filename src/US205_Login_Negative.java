@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class US_205_Giris_Negative extends BaseDriver {
+public class US205_Login_Negative extends BaseDriver {
     @Test
     public void Test5() {
         MyFunc.wait(3);

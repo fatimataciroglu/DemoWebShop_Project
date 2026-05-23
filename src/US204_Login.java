@@ -4,11 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-public class US_203_Hesabdan_Cixis extends BaseDriver {
+public class US204_Login extends BaseDriver {
     @Test
-    public void Test3() {
+    public void Test4() {
+        MyFunc.wait(3);
         driver.get("https://demowebshop.tricentis.com/");
         WebElement login = driver.findElement(By.xpath("//a[@class='ico-login']"));
         login.click();
@@ -24,21 +24,10 @@ public class US_203_Hesabdan_Cixis extends BaseDriver {
         WebElement loginClick = driver.findElement(By.xpath("//input[@class='button-1 login-button']"));
         loginClick.click();
 
-        WebElement hoverElement = driver.findElement(By.xpath("(//ul[@class='top-menu']/li)[2]/a"));
-        Actions action = new Actions(driver);
-        action.moveToElement(hoverElement).build().perform();
-        MyFunc.wait(1);
-
         WebElement checkName = driver.findElement(By.xpath("(//a[@class='account'])[1]"));
         Assert.assertTrue("Melumatlar dogru deyil",checkName.getText().contains("caps"));
 
-        WebElement logoutClick = driver.findElement(By.xpath("//a[@class='ico-logout']"));
-        logoutClick.click();
-
-        WebElement registerBtn = driver.findElement(By.xpath("//a[@class='ico-register']"));
-        Assert.assertTrue("Logout edilmedi",registerBtn.getText().contains("Register"));
-
         gozleBagla();
+}
+}
 
-
-    }}

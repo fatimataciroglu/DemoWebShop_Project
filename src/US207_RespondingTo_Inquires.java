@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class US_207_Sorgu_Cavablandirma extends BaseDriver {
+public class US207_RespondingTo_Inquires extends BaseDriver {
     @Test
     public void Test6() {
         driver.navigate().to("https://demowebshop.tricentis.com/");
